@@ -119,6 +119,7 @@ p{
     color:var(--veryDarkCyan)
 }
 .footer{
+    display:none;
     color:var(--veryDarkCyan);
     font-family: var(--principalFont);
     font-size: 1.2rem;
