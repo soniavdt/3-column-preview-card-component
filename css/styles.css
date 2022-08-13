@@ -1,0 +1,126 @@
+:root{
+    --brightOrange: hsl(31, 77%, 52%);
+    --darkCyan: hsl(184, 100%, 22%);
+    --veryDarkCyan: hsl(179, 100%, 13%);
+    --transparentWhite: hsla(0, 0%, 100%, 0.75);
+    --veryLightGray: hsl(0, 0%, 95%);
+    
+    --secundaryFont:'Big Shoulders Display', cursive;
+    --principalFont: 'Lexend Deca', sans-serif;
+}
+
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+}
+*, *:before, *:after {
+    box-sizing: inheri
+}
+h2{
+    font-family: var(--secundaryFont);
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: var(--veryLightGray);
+    text-transform: uppercase;
+}
+p{
+    font-family: var(--principalFont);
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-align: left;
+    color: var(--transparentWhite);
+    margin-bottom: 4rem;
+    line-height: 1.5;
+}
+
+@media (min-width: 768px) {
+    p{
+       margin-bottom: 10rem;
+    }
+   
+}
+.button{
+    display: block;
+    background-color: var(--veryLightGray);
+    padding: 1.5rem;
+    border-radius: 3rem;
+    margin-top: 2rem;
+    text-decoration: none;
+    font-family: var(--principalFont);
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-align: center;
+    width: 40%;
+}
+
+.button:hover{
+    background-color: transparent;
+    color: var(--transparentWhite);
+    border: 2px solid var(--veryLightGray);
+}
+.contenedor{
+    max-width: 144rem;
+    margin: 0 auto;
+}
+.carBrands{ 
+    border-radius: 1rem;  
+    margin: 2rem;
+}
+@media (min-width: 768px) {
+    .carBrands{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        margin: 0 25rem
+    }
+}
+.carBrands--Sedans,
+.carBrands--SUVs,
+.carBrands--Luxury{
+    padding: 5.1rem;
+}
+.carBrands--Sedans{
+    border-radius: 1rem 1rem 0 0;
+    background-color: var(--brightOrange);
+}
+@media (min-width: 768px) {
+    .carBrands--Sedans{
+        border-radius: 1rem 0 0 1rem;
+    }
+}
+
+.carBrands--SUVs{
+    background-color: var(--darkCyan);
+}
+.carBrands--Luxury{
+    background-color: var(--veryDarkCyan);
+    border-radius: 0 0 1rem 1rem;
+}
+@media (min-width: 768px) {
+    .carBrands--Luxury{
+        border-radius: 0 1rem 1rem 0;
+    }
+}
+
+.button--Sedans{
+    color: var(--brightOrange);
+}
+.button--SUVs{
+    color: var(--darkCyan);
+}
+.button--Luxury{
+    color:var(--veryDarkCyan)
+}
+.footer{
+    color:var(--veryDarkCyan);
+    font-family: var(--principalFont);
+    font-size: 1.2rem;
+    font-weight: 400;
+}
